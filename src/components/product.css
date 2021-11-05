@@ -1,0 +1,81 @@
+:root{
+    --mainblue :#2a2a72;
+    --lightblue:#099ffd;
+    --mainwhite:#f3f3f3;
+    --maindark:#232528;
+    --mainyellow:#ffa400;
+  }
+
+.card-footer{
+    justify-content: space-around;
+padding: 10px 0px 15px;
+align-items: center;
+font-size: 19px;
+display: flex;
+font-family: 'Oswald', sans-serif;
+background :transparent;
+border-top : transparent;
+transition: all 1s linear;
+}
+.card-footer:hover{
+    background : rgba(247,247,247);  
+}
+.card{
+    border-color : transparent;
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+.card:hover{
+    border : 0.07rem solid rgba(0,0,0,0.2);
+    box-shadow : 5px 5px 10px 0px rgba (0,0,0,0.2);
+}
+.img-container{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.7s linear;
+}
+.card-img-top{
+    transition: all 1s linear;
+
+}
+.img-container:hover{
+    transform: scale(1.2);
+}
+.img-container:hover .card-btn{
+    transform: translate(0,0);
+}
+.cart-btn{
+    
+    position: absolute;
+    bottom:45px;
+    right: 0;
+    padding: 0.2rem 0.4rem;
+    background: var(--lightblue);
+    border: none;
+    color: var(--mainwhite);
+    font-size: 1.4rem;
+    border-radius: 0.5rem 0 0 0 ;
+    transition: all 0.4s linear;
+    margin: 10px;
+}
+.img-container:hover.card-btn-{
+    transform: translate(0 , 0);
+}
+.card-btn-2{
+
+    padding: 5px;
+    background: var(--mainyellow);
+    border: none;
+    color: var(--mainwhite);
+    font-size: 1.4rem;
+    border-radius:9px ;
+    transition: all 0.4s linear;
+}
+.card-btn-2:hover{
+    color: var(--mainblue);
+    cursor: pointer;
+}
+.cart-btn:hover{
+    color: var(--mainblue);
+    cursor: pointer;
+}

@@ -1,0 +1,40 @@
+body{
+  font-family: 'Oswald', sans-serif !important; 
+  background-color: var(--mainwhite) !important;
+  color: var(--maindark) !important;
+
+}
+.text-title {
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+.text-blue {
+  color: var(--mainblue);
+
+
+}
+.btn-black{
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--maindark);
+  border-radius: 0rem   !important;
+  border: 0.1rem solid var(--maindark) !important;
+}
+.btn-black:hover{
+  background: var(--maindark) !important;
+  color: var(--mainwhite) !important;
+}
+.cart-icon{
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainyellow);
+}
+
+:root{
+  --mainblue :#2a2a72;
+  --lightblue:#099ffd;
+  --mainwhite:#f3f3f3;
+  --maindark:#232528;
+  --mainyellow:#ffa400;
+}
