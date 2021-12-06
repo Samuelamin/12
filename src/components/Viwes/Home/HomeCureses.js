@@ -9,6 +9,7 @@ const HomeCureses = () => {
   return (
     
     <div className='container'>
+      <h1 className='my-3'> Our Exclusive Courses </h1>
       <div className='row'>
       <ProductConsumer>
             {value =>{
@@ -17,7 +18,7 @@ const HomeCureses = () => {
                     return (
                       <ProductConsumer >
                         {value =>(
-                      <div className='col-lg-6 ' key={course.id}>
+                      <div className='col-4 ' key={course.id}>
       <Card className='Coursecardbody' >
       <CardBody>
       {icon}

@@ -5,6 +5,7 @@ import SideBar from "../Sidebar/SideBar";
 import React, { Component } from 'react'
 import HomeCureses from "./HomeCureses";
 import Fotter from "../fotter/Fotter";
+import SwiperCourses from "./SwiperCourses";
 
 export class Home extends Component {
     render() {
@@ -13,7 +14,7 @@ export class Home extends Component {
             <div>
 <div style={{display:"flex"}}>
 <SideBar />
-<div>
+<div className='container'>
 
 <div className='section-1'>
         <div className='container '>
@@ -47,10 +48,12 @@ export class Home extends Component {
         </div>
   </div>
 
-
+<div className='my-5'>
+<SwiperCourses/>
+</div>
 
 <div className='section-2'>
-    
+
 <HomeCureses/>
 </div>
   

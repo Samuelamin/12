@@ -6,6 +6,8 @@ import 'swiper/swiper.min.css';
 import "swiper/components/autoplay/package.json";
 import "swiper/components/pagination/package.json";
 import "swiper/components/navigation/package.json";
+
+SwiperCore.use([Autoplay,Pagination,Navigation]);
 <Swiper spaceBetween={50} slidesPerView={4} autoplay={{"delay": 2000,"disableOnInteraction": false}}>
 <SwiperSlide>Slide 2</SwiperSlide>
 <SwiperSlide>Slide 3</SwiperSlide>
