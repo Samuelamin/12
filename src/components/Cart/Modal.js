@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {Link} from "react-router-dom";
 import styled from 'styled-components';
 import { ProductConsumer } from '../context'; 
-import '../product.css';
+import '../Products/product.css';
+
 
 export class Modal extends Component {
     render() {
@@ -26,7 +27,7 @@ export class Modal extends Component {
             <img src={img} alt='sasa' className='img-fluid' />
             <h5> {title} </h5>
             <h5 className='text-muted'> price : {price} </h5>
-            <Link to='/'>
+            <Link to='/ProductList'>
                 <button className='cart-btn '
                   style={{padding:'5px', bottom:'0' ,position:'relative' , borderRadius :'9px'}}
                    onClick={()=> closeModal()}> 

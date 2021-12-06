@@ -1,13 +1,21 @@
-import React, { Component } from 'react';
+import React  from 'react'
 import Product from "./Product";
-import { ProductConsumer } from './context';
-export class ProductList extends Component {
+import { ProductConsumer } from '../context';
+import SideBar from '../Viwes/Sidebar/SideBar';
+import Fotter from '../Viwes/fotter/Fotter';
 
-    render() {
-        return (
+
+
+const ProductList = () => {
+   
+    return (
         <div>
+        <div style={{display:"flex"}}>
+            
+          <SideBar  />
+         
            <div className='container'>
-                <h1 style={{textAlign:"center",marginTop:'20px'}}>Our Products</h1>
+                <h1 style={{textAlign:"center",marginTop:'40px'}} className="my-5">Store</h1>
                <div className='row' style={{ justifyContent:'space-around'}}>
                     <ProductConsumer>
                         {  value =>{  
@@ -19,11 +27,14 @@ export class ProductList extends Component {
                     </ProductConsumer>
                </div>
            </div>
-
-
+           </div>
+<Fotter/>
         </div>
-        )
-    }
+    )
 }
 
+
+
 export default ProductList
+
+

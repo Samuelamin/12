@@ -1,0 +1,26 @@
+.fotter li a{
+    text-decoration: none;
+    font-family: revert;
+    transition: all 0.7s ease;
+}
+.fotter li{
+    width: 155px;
+    padding: 0px 0px 16px 0px;
+}
+.fotter h2{
+    padding: 10px 0px 6px 30px;
+}
+.fotter .part-3 li{
+    display: flex;
+}
+
+.part-3 i{
+    padding: 0px 10px;
+    color: white;
+}
+.part-22 h1{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}

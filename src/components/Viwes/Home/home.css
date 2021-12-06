@@ -1,0 +1,93 @@
+.section-1 .row{
+    padding: 50px 0px 50px;
+    justify-content: center;
+}
+.title h1{
+    text-align: center;
+    padding: 29px 0px 0px;
+    color: blue;
+    font-size: 60px;
+}
+.title h1 span{
+    font-size: 17px;
+    color: gray;
+}
+
+.part-2 h1{
+    text-align: start;
+}
+.part-2{
+    align-items: center;
+    display: inline-flex;
+}
+.part-1 img{
+    border-radius: 164px;
+}
+.part-2 .btn-1{
+        width: 100px;
+        height: 44px;
+        border-radius: 11px;
+        border: none;
+        background-color: orange;
+        color: white;
+        font-size: 21px;
+    margin: 20px;
+    transition: all 0.2s ease-in-out;
+}
+.part-2 .btn-1:hover{
+    background-color: rgb(255, 196, 0);
+    transform: scale(1.1);
+}
+.part-2 .btn-2:hover{
+    background-color:rgb(0, 83, 236) ;
+    transform: scale(1.1);
+}
+.part-2 .btn-2{
+    width: 100px;
+    height: 44px;
+    border-radius: 11px;
+    border: none;
+    background-color: rgb(11, 67, 170);
+    color: white;
+    font-size: 21px;
+    transition: all 0.2s ease-in-out;
+}
+
+/*home card*/
+.cardb{
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.cursesmenu{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Coursecardbody{
+    border-color: transparent;
+    transition: all 0.5s linear;
+    cursor: pointer;
+    margin-bottom: 14px;
+    background-color: #bfceff;
+    height: 370px;
+}
+.Coursecardbody button{
+    bottom: 10px;
+    right: 10px;
+    height: 38px;
+    position: absolute;
+    width: 140px;
+    background-color: blueviolet;
+    transition: all 1s ease;
+}
+.Coursecardbody button:hover{
+    background-color: orange;
+}
+
+.Coursecardbody i{
+    font-size: 35px;
+    color: azure;
+    padding: 10px 13px 10px;
+}

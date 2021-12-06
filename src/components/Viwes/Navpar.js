@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import logo from '../logo.svg';
+import logo from '../../logo.svg';
 import styled from 'styled-components';
 export class Navpar extends Component {
     render() {
         return (
-            <div>
+        
+            <div > 
+            
             <NavWrapper className='navbar navbar-expand-sm  navbar-dark px-sm-5'>
                 {/*
                 https://www.iconfinder.com/icons/1243689/call_phone_icon
@@ -15,24 +17,25 @@ export class Navpar extends Component {
                 <Link to='/'>
                 <img src={logo} alt='sasa' className='navbar-barnd' />
                 </Link>
-
+                
                 <ul className='navbar-nav align-items-center'>
-                <li className='nav-item ml-5' style={{marginLeft:'5rem'}}>
-
-                <Link to='/' className='nav-link'> Our Products</Link> 
+                <li className='nav-item d-flex ' style={{marginLeft:'5rem'}}>
+                <Link to="Home" className='nav-link' > Home </Link>
+                <Link to='ProductList' className='nav-link'> Store</Link> 
                 </li>                
                 </ul>
+                
                 <Link to='/cart' style={{marginLeft:'auto'}}>
                     <ButtonContainer > 
                         <span className='mr-2'>
                         <i className='fas fa-cart-plus'/>
                         </span>
-                        my cart
+                        cart
                     </ButtonContainer>
                 </Link>
             
             </NavWrapper>
-
+        
 
 
             </div>

@@ -61,21 +61,33 @@ transition: all 1s linear;
 .img-container:hover.card-btn-{
     transform: translate(0 , 0);
 }
+.card-btn-1{
+    padding:5px;
+    background-color: white;
+    border: 1px solid var(--lightblue);
+    color: var(--lightblue);
+    font-size: 1.4rem;
+    border-radius: 9px ;
+    transition: all 0.4s ease-in;
+    margin: 10px; 
+}
 .card-btn-2{
 
     padding: 5px;
-    background: var(--mainyellow);
-    border: none;
-    color: var(--mainwhite);
+    background-color: white;
+    border: 1px solid var(--mainyellow);
+    color: var(--mainyellow);
     font-size: 1.4rem;
     border-radius:9px ;
-    transition: all 0.4s linear;
+    transition: all 0.4s ease-in;
 }
 .card-btn-2:hover{
-    color: var(--mainblue);
-    cursor: pointer;
+    background-color: var(--mainyellow);
+    border: none;
+    color: white;
 }
-.cart-btn:hover{
-    color: var(--mainblue);
-    cursor: pointer;
+.card-btn-1:hover{
+    background-color:var(--lightblue);
+    color: white;
+    border: none;
 }

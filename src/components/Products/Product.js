@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ProductConsumer } from './context';
+import { ProductConsumer } from '../context';
 import {Link} from "react-router-dom";
 import {Card , CardImg  } from 'reactstrap'
 
@@ -15,8 +15,8 @@ export class Product extends Component {
         { value => (
             <div>
         <div className='img-container p-5'  onClick={ ()=> value.handleDetail(id)}>
-        <Link to='/details'>
-        <CardImg alt="Card image cap"src={img} top className='card-img-top' />
+        <Link to='/Details'>
+        <CardImg alt="Card image cap"src={img} top className='card-img-top'style={{height:"155px"}} />
         </Link>
         </div>
 
@@ -37,9 +37,8 @@ export class Product extends Component {
         {/* card footer */}
         <div className='card-footer' >
             <p className='align-self-center mb-0'> {title} </p>
-            <h5 className='text-blue font-iltalic mb-0' style={{}}>
-                <span className='mr-1'>$</span>
-                {price}
+            <h5 className='text-blue font-iltalic mb-0' >
+                {price} <span className='mr-1'>EG</span>
             </h5>
 
         </div>

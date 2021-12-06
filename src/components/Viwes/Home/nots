@@ -1,0 +1,21 @@
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { ProductConsumer } from "../../context";
+import SwiperCore ,{Autoplay,Pagination,Navigation } from "swiper/core";
+import 'swiper/swiper.min.css';
+import "swiper/components/autoplay/package.json";
+import "swiper/components/pagination/package.json";
+import "swiper/components/navigation/package.json";
+<Swiper spaceBetween={50} slidesPerView={4} autoplay={{"delay": 2000,"disableOnInteraction": false}}>
+<SwiperSlide>Slide 2</SwiperSlide>
+<SwiperSlide>Slide 3</SwiperSlide>
+<SwiperSlide>Slide 4</SwiperSlide>
+<SwiperSlide>Slide 1</SwiperSlide>
+<SwiperSlide>Slide 2</SwiperSlide>
+<SwiperSlide>Slide 3</SwiperSlide>
+<SwiperSlide>Slide 4</SwiperSlide>
+<SwiperSlide>Slide 1</SwiperSlide>
+<SwiperSlide>Slide 2</SwiperSlide>
+<SwiperSlide>Slide 3</SwiperSlide>
+<SwiperSlide>Slide 4</SwiperSlide>
+</Swiper>

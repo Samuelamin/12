@@ -1,0 +1,95 @@
+.sidebar{
+    height: 100vh;
+    width: 59px;
+    background-color: #002b49;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    top: 0px;
+    position: sticky;
+    z-index: 5;
+    overflow: hidden;
+}
+
+  
+.sidebar h4{
+    color: #5cb0ff;
+    text-align: center;
+    padding: 15px 0px 20px;
+    font-family: 'Roboto Condensed';
+}
+.sidebar:hover{
+    width: 270px;
+    overflow-y: scroll;
+}
+.sidebar::-webkit-scrollbar{
+    width: 8px;
+    background: rgb(123, 151, 187);
+    border-radius: 8px;
+  }
+  .sidebar::-webkit-scrollbar-thumb{
+    background: rgb(92, 5, 252);
+    border-radius: 8px;
+  }
+
+
+.nav-text{
+    list-style: none;
+    padding: 5px 3px ;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.nav-text i , .sidebar i{
+    padding: 7px 15px;
+    color: darkgrey;
+    font-size: 18px;
+}
+.nav-text span , .sidebar span{
+    position: absolute;
+    padding: 3px 11px;
+}
+
+.nav-text:hover {
+    background-color: #14395c;
+    border-left: 4px solid #455dc9;
+}
+.nav-text a , .sidebar span{
+    text-decoration: none;
+   color: white;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;  
+    transition: all 0.5s ease;
+}
+
+.support{
+    transition: all 0.5s ease;
+    padding: 10px 0px 10px;
+}.support:hover{
+    background-color: #14395c;
+    border-left: 4px solid #455dc9;
+}
+
+
+.side-item a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+
+}
+.side-item {
+    background-color: #042338;
+    transition: all 0.3s ease   ;
+   
+}
+.side-item:hover{
+    background-color:#1585cf ;
+}
+.side-item li{
+    list-style: none;
+    transition: all 1s ease;
+    padding-bottom: 10px;
+    position: relative;
+    left: 20px;
+}
