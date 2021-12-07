@@ -71,14 +71,14 @@
     cursor: pointer;
     margin-bottom: 14px;
     background-color: #bfceff;
-    height: 400px;
+    height: 450px;
 }
 .Coursecardbody button{
     bottom: 10px;
     right: 10px;
     height: 38px;
     position: absolute;
-    width: 140px;
+    width: 150px;
     background-color: blueviolet;
     transition: all 1s ease;
 }

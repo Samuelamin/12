@@ -15,12 +15,12 @@ export class SwiperCourses extends Component {
         return (
             <div className='container'>
                 <h1 className='my-3'>The most famous courses </h1>
-    <Swiper spaceBetween={50} slidesPerView={3} autoplay={{"delay": 2000,"disableOnInteraction": true}}>
+    <Swiper spaceBetween={50} slidesPerView={3} autoplay={{"delay": 2000,"disableOnInteraction": false}}>
    
 {SidbarData.map(item =>(
     
        <SwiperSlide key={item.id}>
-      <Card  style={{backgroundColor:"black"}}>
+      <Card  style={{backgroundColor:"black" , height:"200px"}} >
       <CardBody>
       <CardTitle tag="h3"  style={{color:"white"}}> {item.title} </CardTitle>
       <h5 className='text-blue font-iltalic mb-2' >

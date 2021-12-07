@@ -20,8 +20,8 @@ export class Navpar extends Component {
                 
                 <ul className='navbar-nav align-items-center'>
                 <li className='nav-item d-flex ' style={{marginLeft:'5rem'}}>
-                <Link to="Home" className='nav-link' > Home </Link>
-                <Link to='ProductList' className='nav-link'> Store</Link> 
+                <Link style={{padding:"5px"}} to="Home" className='nav-link' > Home </Link>
+                <Link style={{padding:"5px"}} to='ProductList' className='nav-link'> Store</Link> 
                 </li>                
                 </ul>
                 

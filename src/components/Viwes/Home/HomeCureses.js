@@ -18,8 +18,9 @@ const HomeCureses = () => {
                     return (
                       <ProductConsumer >
                         {value =>(
-                      <div className='col-4 ' key={course.id}>
-      <Card className='Coursecardbody' >
+                      <div className=' col-xl-4 col-lg-6 col-md-6 col-sm-12 ' key={course.id}>
+      <Card className='Coursecardbody' > 
+      <div className='container'> 
       <CardBody>
       {icon}
       <CardTitle tag="h3"  style={{color:"blue"}}> {title} </CardTitle>
@@ -38,6 +39,7 @@ const HomeCureses = () => {
       </Button>
       </Link>
       </CardBody>
+      </div>
       </Card>
                      </div>
                      )}

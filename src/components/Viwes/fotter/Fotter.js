@@ -8,7 +8,7 @@ export class Fotter extends Component {
             <div className='Container fotter' style={{backgroundColor:"black" , padding:"20px"}}>
                
 <div className='row'>
-<div className='part-1 col-6'>
+<div className='part-1 col-lg-6 col-sm-12'>
 <h2>BABA Acdemye</h2>
 <div className='row'>
 
@@ -37,7 +37,7 @@ export class Fotter extends Component {
 </div>
 </div>
 </div>
-<div class="part-3 col-3 ">
+<div class="part-3 col-lg-3 col-sm-12 ">
 <h2>Contact US</h2>
 <ul>
 <li>
@@ -54,7 +54,7 @@ export class Fotter extends Component {
 </li>
 </ul>
 </div>
-<div className='part-22 col-3'>
+<div className='part-22 col-lg-3 col-sm-12 '>
 <h1>Make Your Owne Way</h1>
 </div>
 </div>                
