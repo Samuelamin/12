@@ -75,7 +75,7 @@ return(
                     <CardTitle tag="h3"  style={{color:"blue"}}> {sideitem.title} </CardTitle>
                     <CardSubtitle className="mb-2 "tag="h6" style={{color:"orange"}}>made By : Samuel Amin </CardSubtitle>
                     <h5 className='text-blue font-iltalic mb-2' >
-                    {sideitem.price} <span className='mr-1'>$</span>
+                    {sideitem.price} <span className='mr-1'>EG</span>
                     </h5>
                     <h5> Totle Houres : {sideitem.TotalHoures} </h5>
                     </CardBody>

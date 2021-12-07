@@ -42,7 +42,7 @@ export default function CartItem({item , value}) {
             </div>
 
             <div className='col-10 mx-auto col-lg-2'>
-             <strong> item total : $ {total}</strong>
+             <strong> item total : {total} EG</strong>
              
             </div>
 
