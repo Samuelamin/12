@@ -1,15 +1,11 @@
-import React from 'react';
-import SidebarMenu from './SidebarMenu';
+import React  from 'react';
 import "./SideBar.css"
 import { ProductConsumer } from '../../context';
+import { Link } from 'react-router-dom';
 
-
-
-export default function SideBar() {
+const SideBar = () => {
   return (
-
-        
-      <nav className='sidebar'>
+      <nav className='sidebar' >
         <h4>BABA  </h4>
        
       <ul className='nav-menu-items' style={{paddingLeft:"initial"}}>
@@ -17,12 +13,26 @@ export default function SideBar() {
       <ProductConsumer>
             {value =>{
                 return value.courses.map(course =>{
-                    return <SidebarMenu course={course}
-                     key={course.id} />
+                  const {title ,icon , id } =course;
+                    return (
+                      <ProductConsumer key={id}>
+                      {value => (
+                                 <div className='side-menu'  >
+                                 <li className='nav-text'  >
+                                     <Link to='/CursePage'  onClick={ ()=> value.handlecourseDetail(id)} >
+                                        {icon} <span>{title}</span> 
+                                     </Link>
+                                 </li>
+                     
+                             </div>
+                      )}
+            </ProductConsumer>
+
+                    )
                 })
             }}
             </ProductConsumer>
-          
+
       </ul>
       <div >  
           <div className='support'>
@@ -36,3 +46,5 @@ export default function SideBar() {
       
   )
 }
+
+export default SideBar

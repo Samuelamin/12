@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { ProductConsumer } from "../../context";
-import {Card , CardBody , CardTitle , CardSubtitle , CardText , Button } from "reactstrap"
+import {Card , CardBody , CardTitle  } from "reactstrap"
 import {SidbarData} from "../../Cart/data";
 import SwiperCore ,{Autoplay,Pagination,Navigation } from "swiper/core";
 import 'swiper/swiper.min.css';
@@ -15,12 +14,12 @@ export class SwiperCourses extends Component {
         return (
             <div className='container'>
                 <h1 className='my-3'>The most famous courses </h1>
-    <Swiper spaceBetween={50} slidesPerView={3} autoplay={{"delay": 2000,"disableOnInteraction": false}}>
+    <Swiper spaceBetween={50} slidesPerView={3}  autoplay={{"delay": 2000,"disableOnInteraction": false}}>
    
 {SidbarData.map(item =>(
     
        <SwiperSlide key={item.id}>
-      <Card  style={{backgroundColor:"black" , height:"200px"}} >
+      <Card  style={{backgroundColor:"black" , height:"150px"}} >
       <CardBody>
       <CardTitle tag="h3"  style={{color:"white"}}> {item.title} </CardTitle>
       <h5 className='text-blue font-iltalic mb-2' >

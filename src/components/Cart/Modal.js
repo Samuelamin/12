@@ -31,7 +31,7 @@ export class Modal extends Component {
                 <button className='cart-btn '
                   style={{padding:'5px', bottom:'0' ,position:'relative' , borderRadius :'9px'}}
                    onClick={()=> closeModal()}> 
-                    Store
+                    Continue Shoping
                 </button>
             </Link>
             <Link to='/cart'>

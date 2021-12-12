@@ -136,6 +136,7 @@ coursesaddtoCart =id =>{
         product.count =product.count-1 ;
          if(product.count === 0){
              this.reomveItem(id);
+             this.reomveItemcourses(id);
          }else{
              product.total = product.count * product.price;
              this.setState(()=>{
@@ -163,6 +164,25 @@ coursesaddtoCart =id =>{
            this.addtotals();
        })
     };
+    reomveItemcourses = id =>{
+        let tempCourses =[...this.state.courses];
+        let tempCart =[...this.state.cart];
+        tempCart =tempCart.filter(item => item.id !== id);
+        const index = tempCourses.indexOf(this.getItemCourses(id));
+        let removedCourse =tempCourses[index];
+        removedCourse.inCart = false;
+        removedCourse.count =0;
+        removedCourse.total=0;
+ 
+        this.setState(()=>{
+            return{
+                cart:[...tempCart] ,
+                courses :[...tempCourses]
+            };
+        } , ()=>{
+            this.addtotals();
+        })
+     };
 
     clearCart=()=>{
       this.setState(()=>{
@@ -206,7 +226,8 @@ addtotals =()=>{
                 increment:this.increment,
                 decrement:this.decrement,
                 reomveItem:this.reomveItem,
-                clearCart:this.clearCart    
+                clearCart:this.clearCart,
+                reomveItemcourses:this.reomveItemcourses    
             }}>
               {this.props.children}
             </ProductContext.Provider>

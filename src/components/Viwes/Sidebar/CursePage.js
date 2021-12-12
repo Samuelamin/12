@@ -2,7 +2,7 @@ import SideBar from './SideBar';
 import { ProductConsumer } from '../../context';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import {Card , CardBody , CardTitle , CardSubtitle , CardText } from "reactstrap"
+import {Card , CardBody , CardTitle , CardSubtitle  } from "reactstrap"
 export class CursePage extends Component {
     
     render() {
@@ -14,8 +14,7 @@ export class CursePage extends Component {
                 {value =>{
 const {id , title , icon , TotalHoures , img , price , info , inCart , sideitem } = value.SidebarDataDetails;
 return(
-    <ProductConsumer>
-        {value=>(
+
             <div>
     <div className='container '>
     <div className='row'>
@@ -35,8 +34,8 @@ return(
             </h4>
             <h4 className='text-blue' >
                 <strong>
-                    price : <span>$</span>
-                    {price}
+                    price :
+                    {price}  <span>EG</span> 
                 </strong>
             </h4>
             <h5 className='text-blue'>
@@ -87,8 +86,7 @@ return(
         </div>
 
               </div>
-                          )}
-                          </ProductConsumer>
+                        
                              )
                 }}
 
