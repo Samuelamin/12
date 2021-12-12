@@ -7,6 +7,7 @@ import 'swiper/swiper.min.css';
 import "swiper/components/autoplay/package.json";
 import "swiper/components/pagination/package.json";
 import "swiper/components/navigation/package.json";
+import "./home.css"
 
 SwiperCore.use([Autoplay,Pagination,Navigation]);
 export class SwiperCourses extends Component {

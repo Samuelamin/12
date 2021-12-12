@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function CartItem({item , value}) {
     const {id , title , img , price , total , count} = item;
-    const {increment , decrement ,reomveItem , reomveItemcourses} = value;
+    const {increment , decrement , reomveItem , reomveItemcourses} = value;
     return (
         <div className='row my-2 text-capitalize text-center'>
             <div className='col-10 mx-auto col-lg-2'>

@@ -9,19 +9,14 @@ export class Navpar extends Component {
             <div > 
             
             <NavWrapper className='navbar navbar-expand-sm  navbar-dark px-sm-5'>
-                {/*
-                https://www.iconfinder.com/icons/1243689/call_phone_icon
-                Creative Commons (Attribution 3.0 Unported);
-                https://www.iconfinder.com/Makoto_msk
-                */}
-                <Link to='/'>
-                <img src={logo} alt='sasa' className='navbar-barnd' />
-                </Link>
                 
                 <ul className='navbar-nav align-items-center'>
                 <li className='nav-item d-flex ' style={{marginLeft:'5rem'}}>
-                <Link style={{padding:"5px"}} to="Home" className='nav-link' > Home </Link>
-                <Link style={{padding:"5px"}} to='ProductList' className='nav-link'> Store</Link> 
+                <Link style={{padding:"5px 10px"}} to="Home" className='nav-link' > Home </Link>
+                <Link style={{padding:"5px 10px"}} to='productlist' className='nav-link'> Store</Link> 
+                <Link style={{padding:"5px 10px"}} to='#' className='nav-link'> Contact US</Link> 
+                <Link style={{padding:"5px 10px"}} to='#' className='nav-link'> Curses </Link> 
+                <Link style={{padding:"5px 10px"}} to='#' className='nav-link'> Support</Link> 
                 </li>                
                 </ul>
                 
@@ -68,12 +63,4 @@ background : var(--mainblue);
     text-transform : captalize  ;
 }
 `
-
-
-
-
-
-
-
-
 export default Navpar

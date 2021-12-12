@@ -97,7 +97,7 @@ export const storeProducts = [
     total: 0
   },
   {
-    id: 10,
+    id: 9,
     title: "dell-icore 7",
     img: "img/delllaptop4.jpg",
     price: 6000,
@@ -109,7 +109,7 @@ export const storeProducts = [
     total: 0
   },
   {
-    id: 11,
+    id: 10,
     title: "Canon 2000D",
     img: "img/canon2000d.jpg",
     price: 6750,
@@ -121,7 +121,7 @@ export const storeProducts = [
     total: 0
   },
   {
-    id: 12,
+    id: 11,
     title: "Canon 4000D",
     img: "img/canon4000d.jpg",
     price: 8000,
@@ -133,7 +133,7 @@ export const storeProducts = [
     total: 0
   },
   {
-    id: 13,
+    id: 12,
     title: "Canon EOS 90D",
     img: "img/canonEos90d.jpg",
     price: 12000,
@@ -145,7 +145,7 @@ export const storeProducts = [
     total: 0
   },
   {
-    id: 14,
+    id: 13,
     title: "Canon EOS 700D",
     img: "img/canoneos700d.jpg",
     price: 14000,
@@ -157,7 +157,7 @@ export const storeProducts = [
     total: 0
   },
   {
-    id: 15,
+    id: 14,
     title: "Canon Mark2",
     img: "img/canonmark2.jpg",
     price: 23000,
@@ -169,7 +169,7 @@ export const storeProducts = [
     total: 0
   },
   {
-    id: 16,
+    id: 15,
     title: "Canon 4000D",
     img: "img/canon4000dd.jpg",
     price: 8000,
@@ -181,7 +181,7 @@ export const storeProducts = [
     total: 0
   },
   {
-    id: 17,
+    id: 16,
     title: "Canon Mark2",
     img: "img/canonmark2.jpg",
     price: 23000,
@@ -196,15 +196,15 @@ export const storeProducts = [
 
 export const detailProduct = {
   id: 1,
-    title: "HP-icore 3",
-    img: "img/hplaptop1.jpg",
-    price: 2500,
-    company: "HP",
-    info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
-    inCart: false,
-    count: 0,
-    total: 0
+  title: "HP-icore 3",
+  img: "img/hplaptop1.jpg",
+  price: 2500,
+  company: "HP",
+  info:
+    "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+  inCart: false,
+  count: 0,
+  total: 0
 };
 
 export const SidbarData =[
