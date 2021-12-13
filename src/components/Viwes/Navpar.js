@@ -16,7 +16,8 @@ export class Navpar extends Component {
                 <Link style={{padding:"5px 10px"}} to='productlist' className='nav-link'> Store</Link> 
                 <Link style={{padding:"5px 10px"}} to='#' className='nav-link'> Contact US</Link> 
                 <Link style={{padding:"5px 10px"}} to='#' className='nav-link'> Curses </Link> 
-                <Link style={{padding:"5px 10px"}} to='#' className='nav-link'> Support</Link> 
+                <Link style={{padding:"5px 10px"}} to='#' className='nav-link'> Support </Link> 
+
                 </li>                
                 </ul>
                 

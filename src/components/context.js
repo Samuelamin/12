@@ -96,6 +96,8 @@ reomveItem = (id)=>{
                 //Courses function
             //Courses function
         //Courses function
+
+        
 setcourses=()=>{
     let tempCourses =[];
     SidbarData.forEach(item=>{
